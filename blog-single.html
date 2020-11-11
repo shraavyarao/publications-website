@@ -46,19 +46,21 @@
         <h1 class="text-light"><a href="index.html">PublishHut</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        
       </div>
-
+     
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          
+          <li class="active"><a href="index.html">Home</a></li>
 
-          <li class="drop-down"><a href="#">About</a>
+          <li class="drop-down"><a href="#">Explore</a>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
+              <li><a href="authorsL.html">Authors</a></li>
+              <li><a href="articlesL.html">Articles</a></li>
+              <li><a href="citL.html">Citations</a></li>
+              <li><a href="depL.html">Departments</a></li>
 
-              <li class="drop-down"><a href="#">Drop Down 2</a>
+              <!-- <li class="drop-down"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -66,18 +68,25 @@
                   <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </li>
 
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="active"><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="pricing.html">Explore</a></li> -->
+          <!-- <li><a href="services.html">Services</a></li> -->
+          <li><a href="portfolio.html">Profile</a></li>
+          <li><a href="blog.html">MaybeBlog</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
 
-          <li class="get-started"><a href="#get-started">Get Started</a></li>
+          <li class="get-started"><a href="#get-started">Login</a></li>
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder=" Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go!</button>
+            </form>
+          </nav>
         </ul>
+        
       </nav><!-- .nav-menu -->
 
     </div>
@@ -90,18 +99,18 @@
       <div class="breadcrumb-hero">
         <div class="container">
           <div class="breadcrumb-hero">
-            <h2>Blog</h2>
+            <h2>Article</h2>
             <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
           </div>
         </div>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <ol>
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li>Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</li>
         </ol>
-      </div>
+      </div> -->
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Blog Section ======= -->
@@ -124,9 +133,12 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="profile.html">John Doe</a></li>
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
                   <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Citations</a></li>
+                  
+                 
                 </ul>
               </div>
 
@@ -327,7 +339,7 @@
 
               </div><!-- End sidebar search formn-->
 
-              <h3 class="sidebar-title">Categories</h3>
+              <!-- <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
                 <ul>
                   <li><a href="#">General <span>(25)</span></a></li>
@@ -338,9 +350,9 @@
                   <li><a href="#">Educaion <span>(14)</span></a></li>
                 </ul>
 
-              </div><!-- End sidebar categories-->
+              </div>End sidebar categories -->
 
-              <h3 class="sidebar-title">Recent Posts</h3>
+              <h3 class="sidebar-title">Related Articles</h3>
               <div class="sidebar-item recent-posts">
                 <div class="post-item clearfix">
                   <img src="assets/img/blog-recent-1.jpg" alt="">
@@ -374,7 +386,7 @@
 
               </div><!-- End sidebar recent posts-->
 
-              <h3 class="sidebar-title">Tags</h3>
+              <h3 class="sidebar-title">Collaboration topics</h3>
               <div class="sidebar-item tags">
                 <ul>
                   <li><a href="#">App</a></li>
