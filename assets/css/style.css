@@ -951,6 +951,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
 .features .card-body {
@@ -1574,12 +1575,16 @@ section {
   margin-bottom: 60px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width:100%;
+ 
+  
 }
 
 .blog .entry .entry-img {
   max-height: 400px;
   margin: -20px -20px 20px -20px;
   overflow: hidden;
+  float: left;
 }
 
 .blog .entry .entry-title {
@@ -1593,6 +1598,7 @@ section {
 .blog .entry .entry-title a {
   color: #3c4133;
   transition: 0.3s;
+  padding-left: 50px;
 }
 
 .blog .entry .entry-title a:hover {
@@ -1608,8 +1614,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 50px;
   margin: 0;
+
 }
 
 .blog .entry .entry-meta ul li + li {
@@ -1631,7 +1638,18 @@ section {
 .blog .entry .entry-content p {
   line-height: 24px;
   font-size: 15px;
-}
+  padding-left: 280px;
+  }
+
+
+
+
+
+
+
+
+
+
 
 .blog .entry .entry-content .read-more {
   -moz-text-align-last: right;
@@ -2275,6 +2293,7 @@ body{
   background-clip: border-box;
   border: 0 solid rgba(0,0,0,.125);
   border-radius: .25rem;
+  height:396px;
 }
 
 .card-body {
@@ -2313,8 +2332,36 @@ body{
 
 .container
 {
- max-width: 100%;
- margin: 0%;
+ max-width: 98%;
+ margin-left: 1%;
+ margin-right: 1%;
+ box-sizing: border-box;
+}
+
+img.img-fluid{
+
+  height:200px;
+  
+}
+
+div.panel.panel-info{
+
+  background-color: #b1da65;
+  padding:20px;
+  margin-bottom: 20px;
 
 }
 
+
+#loginbox{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+ 
+}
+
+footer{
+
+  width:100%;
+}
