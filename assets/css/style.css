@@ -1973,6 +1973,7 @@ section {
   padding: 30px;
   margin: 0 0 60px 20px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 350px;
 }
 
 .blog .sidebar .sidebar-title {
@@ -2364,4 +2365,26 @@ div.panel.panel-info{
 footer{
 
   width:100%;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
