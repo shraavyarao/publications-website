@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+    body{
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    }
+
+    #piechart{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+    </style>
+
+<h1>My Web Page</h1>
+
+<div id="piechart" style="margin-left: 30%; margin-right: 30%;"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Site', 'Citation'],
+  ['Research Gate', 8],
+  ['Google Scholar', 2],
+  ['Scopus', 4],
+  ['ABC', 2],
+  ['DEF', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
