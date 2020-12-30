@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<title>Paper Blaze</title>
 <body>
 
 
@@ -17,14 +18,31 @@
         margin-right: auto;
     }
 
+    .close 
+    {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
 
-
-
+     .close:hover, .close:focus 
+      {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
     </style>
 
-<h1>My Web Page</h1>
 
+
+<a href="profile.html"><div class="close">&times;</div></a>
+<h1 style="text-align: center;">Pie Chart</h1>
+<br>
 <div id="piechart" style="margin-left: 30%; margin-right: 30%;"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -41,8 +59,8 @@ function drawChart() {
   ['Research Gate', 8],
   ['Google Scholar', 2],
   ['Scopus', 4],
-  ['ABC', 2],
-  ['DEF', 8]
+  ['WebOfScience', 2],
+  ['IEEE', 8]
 ]);
 
   // Optional; add a title and set the width and height of the chart

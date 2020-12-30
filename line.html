@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <title>Paper Blaze</title>
+    <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Research Gate', 'Google Scholer', 'WebOfScience'],
+            ['2017',  10,              40,               20],
+            ['2018',  11,              46,               31],
+            ['2019',  62,              11,               43],
+            ['2020',  10,              54,               20]
+          ]);
+  
+          var options = {
+            title: 'Citation Count',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+  
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+  
+          chart.draw(data, options);
+        }
+      </script>
+    </head>
+    <body>
+
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+        body{
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
+        }
+    
+        #curve_chart{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            }
+
+        .close:hover, .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+
+    
+        </style>
+            <a href="profile.html"><div class="close">&times;</div></a>
+      <div id="curve_chart" style="width: 900px; height: 500px;" ></div>
+  
+ 
+    </body>
+  </html>
+  

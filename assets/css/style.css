@@ -1808,11 +1808,21 @@ section {
 
 .blog .blog-author .social-links {
   margin: 0 0 5px 140px;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
 }
 
 .blog .blog-author .social-links a {
-  color: #a3ab95;
+  color: #000000;
 }
+
+.blog .blog-author .social-links a:hover {
+  background: #89eb81;
+  border-radius: 5px;
+  color: rgb(21, 87, 35);
+  text-decoration: none;
+}
+
 
 .blog .blog-author p {
   margin-left: 140px;
@@ -2330,7 +2340,7 @@ body{
 }
 
 .btn-primary{
-  align: center;
+  align-items: center;
 
 }
 
